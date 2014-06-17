@@ -1,0 +1,16 @@
+.pagination{
+	margin: 2em 5em 0 3em;
+	div{
+		a{
+			display: inline-block;
+			color: $white;
+			background: $red;
+			padding: 1em 2em;
+			font-weight: bold;
+			text-decoration: none;
+		}
+		&:last-child{
+			text-align: right;
+		}
+	}
+}

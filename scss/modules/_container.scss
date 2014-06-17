@@ -1,0 +1,22 @@
+div, article, input, textarea{
+	@include box-sizing(border-box);
+}
+
+.main-wrap{
+	position: relative;
+	width: 100%;
+	top: 0;
+	left: 0;
+	@include single-transition(left,0.2s,ease);
+	&.active{
+		left: -$sliding-range;
+	}
+}
+.container{
+    margin-left: $header-width;
+	padding-top: 0.1px;
+}
+
+body{
+	background: url('../img/congruent_outline.png');
+}

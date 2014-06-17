@@ -1,0 +1,5 @@
+Theme name:    Velova
+Description:   Fresh from the laptop
+Author name:   Hans Agastyra
+Author site:   http://hansagastyra.com
+License:       http://www.gnu.org/licenses/gpl.html

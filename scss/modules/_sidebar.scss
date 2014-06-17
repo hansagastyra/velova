@@ -1,0 +1,59 @@
+.sidebar{
+	position: fixed;
+	right: -$sliding-range;
+	bottom: 0;
+	top: 0;
+	width: $sliding-range;
+	background: $red;
+	border-left: 4px solid $red;
+	z-index: 5;
+	
+	@include single-transition(right,0.2s,ease);
+		
+	.toggle{
+		position: absolute;
+		top: 3em;
+		left: -60px;
+		background: $red;
+		@include single-transition(left,0.2s,ease);
+		@include single-transition(top,0.2s,ease);
+		a{
+			cursor: pointer;
+		}
+		i{
+			color: $white;
+		}
+	}
+	
+	&.active{
+		right: 0;
+		border-color: $white;
+		.toggle{
+			left: -1px;
+			top: 0;
+			background: $white;
+			i{
+				color: $red;
+			}
+		}
+	}
+}
+
+.sidebar-wrap{
+	padding: 3em 0.75em;
+	color: $white;
+	overflow: auto;
+	input{
+		box-sizing: border-box;
+		width: 100%;
+	}
+	h2, a{
+		color: $white;
+	}
+	h2{
+		margin-bottom: 0.5em;
+	}
+	ul{
+		margin: 0;
+	}
+}

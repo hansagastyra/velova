@@ -1,0 +1,75 @@
+.article-wrap{
+	position: relative;
+	background: $white;
+	padding: 7em 4em 5em;
+	margin-left: 3em;
+	margin-right: 5em;
+	margin-top: 3em;
+	
+	&:before{
+		content: "";
+		position: absolute;
+		top: 85px;
+		left: -20px;
+		border-top: 15px solid $dark-red;
+		border-left: 20px solid transparent;
+		width: 50px;
+		z-index: -1;
+	}
+	
+	> h1{
+		margin-top: 0;
+		position: absolute;
+		padding: 0.5em 1em;
+		top: 20px;
+		left: -20px;
+		background: $red;
+		color: $white;
+		z-index: 1;
+		
+		a{
+			color: $white;
+		}
+	}
+	
+	footer, .footnote{
+		position: absolute;
+		bottom: 20px;
+		right: -20px;
+		background: $red;
+		color: $white;
+		padding: 0.5em 1em;
+
+		&:before{
+			content: "";
+			position: absolute;
+			top: -12px;
+			right: 0;
+			border-bottom: 12px solid $dark-red;
+			border-right: 20px solid transparent;
+			width: 50px;
+			z-index: -1;
+		}
+	}
+	.footnote{
+		p{
+			margin: 0;
+		}
+	}
+}
+.search{
+	.posts-wrap{
+		margin-left: 3em;
+		margin-top: 3em;
+	}
+}
+.search-wrap{
+	color: $white;
+}
+@media all and (min-width: 40.063em){
+
+}
+
+@media all and (min-width: 64.063em) {
+
+}

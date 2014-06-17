@@ -1,0 +1,22 @@
+input,textarea{
+	&:focus{
+		outline: 3px solid $dark-red;
+	}
+}
+
+button{
+	color: $white;
+	font-weight: bold;
+	background: $red;
+	outline: none;
+	border: 4px solid $red;
+	padding: 1em;
+	position: relative;
+	top: 0;
+	@include single-transition(background,0.5s,ease);
+	@include single-transition(color,0.5s,ease);
+	&:focus{
+		background: $white;
+		color: $red;
+	}
+}

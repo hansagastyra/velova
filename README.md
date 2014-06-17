@@ -1,4 +1,4 @@
-velova
+Velova
 ======
 
 Ribbon lover theme for Anchor CMS. It's also for red, black, white lover.

@@ -16,3 +16,6 @@ I really like this CMS because it's so lightweight and don't have too much featu
 
 ## Future Improvement
 For now it's not mobile friendly yet. I don't like my css code messed up because using responsive css framework (you know, it's a bit frustrating when you need to cascade everything!). I also still don't have idea for mobile appearance for this theme.
+
+## Credits
+- subtlepattern.com for the background image.

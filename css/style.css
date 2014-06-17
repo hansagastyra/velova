@@ -524,24 +524,48 @@ body {
   background: white;
   margin: 2.5em calc(5em + 20px) 0 10em;
   padding: 2em;
+  position: relative;
 }
-/* line 67, ../scss/modules/_comment.scss */
+/* line 68, ../scss/modules/_comment.scss */
+.commentform h3 {
+  position: absolute;
+  background: #ef4836;
+  color: white;
+  top: -15px;
+  right: -20px;
+  margin: 0;
+  padding: 0.5em 1em;
+  text-align: right;
+  max-width: calc(10em + 20px);
+}
+/* line 79, ../scss/modules/_comment.scss */
+.commentform h3:before {
+  content: "";
+  position: absolute;
+  top: 50px;
+  right: 0;
+  border-top: 10px solid #c92210;
+  border-right: 20px solid transparent;
+  width: 50px;
+  z-index: -1;
+}
+/* line 91, ../scss/modules/_comment.scss */
 .commentform label {
   display: inline-block;
   min-width: 150px;
 }
-/* line 71, ../scss/modules/_comment.scss */
+/* line 95, ../scss/modules/_comment.scss */
 .commentform input[type=text], .commentform input[type=email] {
   width: 50%;
   display: block;
 }
-/* line 75, ../scss/modules/_comment.scss */
+/* line 99, ../scss/modules/_comment.scss */
 .commentform textarea {
   resize: none;
   width: 100%;
   height: 300px;
 }
-/* line 80, ../scss/modules/_comment.scss */
+/* line 104, ../scss/modules/_comment.scss */
 .commentform .submit {
   margin-bottom: 0;
   text-align: right;

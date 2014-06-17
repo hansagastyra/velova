@@ -63,6 +63,30 @@
 	background: $white;
 	margin: 2.5em calc(5em + 20px) 0 10em;
 	padding: 2em;
+	position: relative;
+	
+	h3{
+		position: absolute;
+		background: $red;
+		color: $white;
+		top: -15px;
+		right: -20px;
+		margin: 0;
+		padding: 0.5em 1em;
+		text-align: right;
+		max-width: calc(10em + 20px);
+		
+		&:before{
+			content: "";
+			position: absolute;
+			top: 50px;
+			right: 0;
+			border-top: 10px solid $dark-red;
+			border-right: 20px solid transparent;
+			width: 50px;
+			z-index: -1;
+		}
+	}
 	
 	label{
 		display: inline-block;

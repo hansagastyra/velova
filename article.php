@@ -35,6 +35,7 @@
 			<?php endif; ?>
 
 			<form id="comment" class="commentform wrap" method="post" action="<?php echo comment_form_url(); ?>#comment">
+				<h3>Your comment</h3>
 				<?php echo comment_form_notifications(); ?>
 
 				<p class="name">
